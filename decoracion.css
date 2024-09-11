@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "h h h h"
+    "n s s s"
+    "n s s s"
+    "f f f f";
+}
+header{
+    background-color: aqua;
+    grid-area: h;
+}
+nav{
+    background-color: aquamarine;
+    grid-area: n;
+}
+
+footer{
+    background-color: rgb(107, 69, 47);
+    grid-area: f;
+}
