@@ -7,21 +7,28 @@ main{
     width: 100vw;
     height: 100vh;
     display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 80px 80px auto 100px;
     grid-template-areas: "h h h h"
     "n s s s"
     "n s s s"
     "f f f f";
 }
 header{
-    background-color: aqua;
+    background-color: rgb(240, 197, 118);
     grid-area: h;
 }
 nav{
-    background-color: aquamarine;
+    background-color: #55d470;
     grid-area: n;
 }
 
 footer{
-    background-color: rgb(107, 69, 47);
+    background-color: #ee7474;
     grid-area: f;
+}
+
+section{
+    background-color: #ffffff;
+    grid-area: s;
 }
