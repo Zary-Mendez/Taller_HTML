@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,19 +7,21 @@
     list-style: none;
 }
 
+
 main{
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 80px 80px auto 100px;
-    grid-template-areas:
-    "n s s s"
-    "n s s s"
+    grid-template-areas:"h h h h"
+    "s s s s"
+    "s s s s"
     "f f f f";
 }
 header{
     background-color: rgb(240, 197, 118);
+    grid-area: h;
     background-image: url(recursosCSS/fondo.jpg);
     background-position: center top;
     background-repeat: no-repeat;
@@ -30,8 +33,55 @@ header{
     background-size: cover;
 }
 
-nav{
-    background-color: #55d470;
+.titulo1{
+    color: #49a4e0;
+    text-align: center;
+    
+    
+    
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+   
+    text-indent: 12px;
+    letter-spacing: 10px;
+    line-height: 50px;
+    word-spacing: 12px;
+    
+
+    font-size: 50px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: "Nerko One", cursive;
+}
+.text{
+    color: #fa1b0b;
+    text-decoration: overline;
+    
+
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+
+    
+    text-indent: 12px;
+    letter-spacing: 5px;
+    line-height: 50px;
+    word-spacing: 12px;
+   
+    
+
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: "Nerko One", cursive;
+}
+ul{
+    background-color: #9cdaa6;
     grid-area: n;
 }
 
@@ -41,11 +91,12 @@ nav{
 }
 
 footer{
-    background-color: #ee7474;
+    background-color:  #9cdaa6;
     grid-area: f;
 }
 
 section{
-    background-color: #ffffff;
+    background: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 154, 3, 0.75));
+    background-color: #cac48d;
     grid-area: s;
 }
