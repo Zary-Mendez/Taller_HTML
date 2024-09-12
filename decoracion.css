@@ -1,6 +1,9 @@
 *{
-    margin: 0%;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 main{
@@ -9,18 +12,32 @@ main{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 80px 80px auto 100px;
-    grid-template-areas: "h h h h"
+    grid-template-areas:
     "n s s s"
     "n s s s"
     "f f f f";
 }
 header{
     background-color: rgb(240, 197, 118);
-    grid-area: h;
+    background-image: url(recursosCSS/fondo.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 154, 3, 0.75)),url(recursosCSS/fondo.jpg), no-repeat center center fixed;
+    background-size: cover;
 }
+
 nav{
     background-color: #55d470;
     grid-area: n;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 footer{
